@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLMStudio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=Fjalla+One&family=Oswald:wght@300&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar" id="nav">
+            <a href="index.html" class="brand">DLMStudio</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-text="Home">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#service" class="nav-link" data-text="About">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-text="Services">À propos</a>
+                </li>
+                <li class="nav-item">
+                <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
+               </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <section class="one" id="home">
+        <div class="text-section">
+            <h1>Studio digitale & créative</h1>
+            <p>DLMStudio propose une conception graphique adaptée à l’image de votre entreprise.</p>
+            <p>De la création de votre logo jusqu’à votre site web.</p>
+            <div class="button_cont">
+                <a class="home-btn" href="add-website-here" target="_blank" rel="nofollow noopener">Contact</a>
+            </div>
+
+        </div>
+        <div class="img-section">
+            <img class="home-img" src="home2.png"/>
+
+        </div>
+    </section>
+    <section class="two" id="service">
+        <h2>Services</h2>
+        <div class="service-sec">
+            <div class="box un">
+                <img class="img-service" src="website.png"/>
+                <p class="titre-service">E-commerce</p>
+                <p class="des-service">Pour développer un site web, on travaille en HTML statique ou avec WordPress pour vos besoin. Notre équipe de développement est adaptable à la hauteur de vos besoins.</p>
+            </div>
+            <div class="box deux">
+                <img class="img-service" src="service2.png"/>
+                <p class="titre-service">Page d'acceuil</p>
+                <p class="des-service">Nos designers prennent en compte tous les éléments d’un site web de l’expérience de l’utilisateur à l’aspect esthétique. Nos créations sont uniques et créés sur-mesure pour les besoins spécifiques de chacun de nos clients.</p>
+            </div>
+            <div class="box trois">
+                <img class="img-service" src="service3.png"/>
+                <p class="titre-service">Logo</p>
+                <p class="des-service">Identité visuelle création ou refonte</p>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="three" id="about">
+        <div class="about-img">
+            <img class="img-about" src="home.png"/>
+        </div>
+        <div class="about-text">
+            <h1 class="about-title">Pourquoi choisir DLMStudio?</h1>
+            <p class="about-des">Pour nos services sur mesure et personnalisés, une création et réalisation selon vos attentes. Nous travaillons en étroite collaboration avec vous pour optimiser votre image corporative. Nous vous offrons toutes notre expertise et notre savoir faire, nous avons des solutions à toute vos questions et prenons votre succès à cœur.</p>
+        </div>
+    </section>
+    <section class="four">
+        <div class="contact-text">
+            <p class="text-contact">Laissez-nous vous guider dans le choix des technologies optimales.</p>
+        </div>
+        <div class="contact-img">
+            <img class="img-contact" src="marketing.png"/>
+        </div>
+    </section>
+    <section class="five" id="contact">
+        <div class="container-contact">
+          <h1 class="brand2"><span>Sou</span>mission</h1>
+          <div class="wrapper-contact">
+            <div class="company-info">
+              <h3>DLMStudio</h3>
+              <ul>
+                <li><i class="fa fa-road"></i> Montreal</li>
+                <li><i class="fa fa-phone"></i> (438) 927-0080</li>
+                <li><i class="fa fa-envelope"></i> info@dlmstudio.ca</li>
+              </ul>
+            </div>
+            <div class="contact">
+              <h3>Nous contacter</h3>
+              <div class="alert">Votre message a été envoyé</div>
+              <form id="contactForm">
+                <p>
+                  <label>Nom</label>
+                  <input type="text" name="name" id="name" required>
+                </p>
+                <p>
+                  <label>Companie</label>
+                  <input type="text" name="company" id="company">
+                </p>
+                <p>
+                  <label>Courriel</label>
+                  <input type="email" name="email" id="email" required>
+                </p>
+                <p>
+                  <label>Téléphone</label>
+                  <input type="text" name="phone" id="phone">
+                </p>
+                <p class="full">
+                  <label>Message</label>
+                  <textarea name="message" rows="5" id="message"></textarea>
+                </p>
+                <p class="full">
+                  <button type="submit">Soumettre</button>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="footer">DLMStudio @2021 All rights reserved.</div>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase.js"></script>      
+<script src="js/navbar.js"></script>
+<script src="loader.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

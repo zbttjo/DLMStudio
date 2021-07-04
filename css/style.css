@@ -1,0 +1,478 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /*background: #fdfffc;*/
+    background: #d6c9b7;
+    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'Rajdhani', sans-serif;
+    background-image: url("https://design-media.ca/wp-content/uploads/2020/06/fond-accueil-svg-1.svg");
+    background-size:150%;
+    background-position: 50%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background: #f5efe7;*/
+    background: #eeebeb;
+    box-shadow: 0 10px 20px -2px rgba(0,0,0,.2);
+    position:fixed;
+    width: 100%;
+    top: 0;
+}
+.brand{
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: 900;
+    color:#ff9f1c;
+}
+.nav-menu{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    display: flex;
+}
+ul li{
+    list-style: none;
+    margin: 0 20px;
+    transition: 0.5s;
+}
+ul li a{
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 18px auto;
+    color:#011627;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+ul:hover li a{
+    transform: scale(1.1);
+    opacity:.2;
+    filter: blur(2px);
+}
+ul li a:hover{
+    transform: scale(1.2);
+    opacity:1;
+    filter: blur(0);
+    color: #f5efe7;
+}
+ul li a:before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #011627;
+    
+    transition: transform 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+}
+ul li a:hover:before{
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+    color: #f5efe7;
+}
+.hamburger {
+    display: none;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 2rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+
+/* Home section */
+
+.one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://design-media.ca/wp-content/uploads/2020/06/fond-accueil-svg-1.svg");
+    background-size:120%;
+    background-position: 150%;
+    height: 100%;
+}
+.text-section{
+    margin: 0px 0px 0px 200px;
+}
+.text-section h1{
+    font-size:3em;
+    margin-top: 140px;
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 900;
+    color: #011627;
+    text-shadow: 0 13.36px 8.896px #ff9f1c,0 -2px 1px rgb(221, 201, 201);
+    letter-spacing: -4px;
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase;
+}
+.text-section p{
+    font-size:1.2em;
+}
+.home-btn {
+	color: #494949 !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background:none;
+	padding: 15px;
+    width: 150px;
+    text-align: center;
+	border: 4px solid #494949 !important;
+	display: inline-block;
+	transition: all 0.4s ease 0s;
+}
+.home-btn:hover {
+	color: #ffffff !important;
+	background: #011627;
+	border-color: #011627 !important;
+	transition: all 0.6s ease 0s;
+}
+
+
+
+.img-section{
+    margin: 150px 0px 0px 0px;
+}
+.home-img{
+    height: 100%;
+    width: 100%;
+}
+@media (max-width: 1200px) {
+    .one{
+        display: block;
+    }
+    .text-section{
+        margin: 0px 0px 0px 100px;
+    }
+}
+
+/* Section Services */
+
+.two{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    background-image: url("https://design-media.ca/wp-content/uploads/2020/06/fond-accueil-svg-1.svg");
+    background-size:120%;
+    background-position: 150%;
+    margin-bottom: 100px;
+    background-color: #eeebeb;
+    border-bottom-left-radius:30%;
+    border-top-right-radius:30%;
+}
+h2{
+    font-size: 3em;
+    text-transform: uppercase;
+}
+.service-sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    margin: 55px;
+    background-color: #f5efe7;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width: 250px;
+    border-radius: 8%;
+}
+.box:hover {
+	color: #ffffff !important;
+	background: #011627;
+	transition: all 0.4s ease 0s;
+}
+
+.img-service{
+    margin: 15px;
+}
+.titre-service{
+    font-size: large;
+    font-weight: 900; 
+}
+.des-service{
+    margin: 25px;
+}
+@media (max-width: 1000px) {
+    .two{
+        border-bottom-left-radius:0%;
+        border-top-right-radius:0%;
+        border-top-left-radius:25%;
+        border-bottom-right-radius:25%;
+    }
+    .service-sec{
+        display:inline-block;
+    }
+}
+
+/* About Section */
+
+.three{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.about-img{
+    margin: 0px 50px 0px 100px;
+}
+.img-about{
+    height: 500px;
+    width: 500px;
+}
+.about-text{
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 0px 0px 150px;
+}
+.about-title{
+    font-size: 3em;
+}
+.about-des{
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 1200px) {
+    .three{
+        display:block;
+    }
+    .about-img{
+        margin: 0px 0px 0px 0px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .img-about{
+        height: 350px;
+        width: 350px;
+    }
+    .about-text{
+        margin: 0px 0px 0px 0px;
+    }
+}
+
+/*Pre-contact section  */
+.four{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeebeb;
+    border-top-left-radius: 30%;
+}
+.contact-text{
+    margin: 0px 10px 0px 0px;
+}
+.text-contact{
+    font-size: 2.5em;
+    margin-left: 50px;
+    font-weight: 900;
+
+}
+
+.contact-img{
+    margin: 0px 0px 0px 10px;
+}
+.img-contact{
+    height: 100%;
+    width: 90%;
+
+}
+
+
+/*Contact Section */
+
+.five{
+    box-sizing: border-box;
+    /*color:#485e74;*/
+    color: #000000;
+    line-height:1.6;
+    padding:1em;
+  }
+  .container-contact{
+    max-width:1170px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:1em;
+  }
+  
+  .wrapper-contact ul{
+    list-style: none;
+    padding:0;
+    
+  }
+  
+  .brand2{
+    text-align: center;
+    margin-top: 80px;
+  }
+  
+  .brand2 span{
+    color:#ffffff
+  }
+  
+  .wrapper-contact{
+    /*box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);*/
+    box-shadow: 0 0 20px 0 #000000;
+  }
+  
+  .wrapper-contact > *{
+    padding: 1em;
+  }
+  
+  .company-info{
+    background:#f5efe7;
+  }
+  
+  .company-info h3, .company-info ul{
+    text-align: center;
+    margin:0 0 1rem 0;
+  }
+  
+  .contact{
+    background:#e7d8c4;
+  }
+  
+  /* FORM STYLES */
+  .contact form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px;
+  }
+  
+  .contact form label{
+    display:block;
+  }
+  
+  .contact form p{
+    margin:0;
+  }
+  
+  .contact form .full{
+    grid-column: 1 / 3;
+  }
+  
+  .contact form button, .contact form input, .contact form textarea{
+    width:100%;
+    padding:1em;
+    border:1px solid #000000;
+  }
+  
+  .contact form button{
+    background:#ff9f1c;
+    border:0;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  
+  .contact form button:hover,.contact form button:focus{
+    background:#000000;
+    color:rgb(255, 255, 255);
+    outline:0;
+    transition: background-color 0.3s ease-out;
+  }
+  
+  .alert{
+    text-align: center;
+    padding:10px;
+    background:#79c879;
+    color:#fff;
+    margin-bottom:10px;
+    display:none;
+  }
+  
+  /* LARGE SCREENS */
+  @media(min-width:700px){
+    .wrapper-contact{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+  
+    .wrapper-contact > *{
+      padding:2em;
+    }
+  
+    .company-info h3, .company-info ul, .brand2{
+      text-align: left;
+    }
+    
+    
+  }
+
+  .footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  @media(max-width: 900px){
+    .footer{
+        margin-bottom: 50px;
+    
+      }
+    .contact form button, .contact form input, .contact form textarea{
+        width:90%;
+      }
+    }
